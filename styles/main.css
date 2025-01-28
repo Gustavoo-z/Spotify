@@ -1,0 +1,21 @@
+.main__content {
+    color: var(--cor-destaque);
+    background-color: var(--cor-fundo);
+    margin: 12px 8px 12px 4px;
+    border-radius: 8px;
+    font-family: var(--font-principal);
+
+    height: 713px;
+}
+
+.main__title {
+    padding: 40px 0 20px 20px;
+    font-weight: 700;
+    font-size: 28px;
+}
+
+.main__subtitle {
+    font-weight: 600;
+    font-size: 22px;
+    padding: 40px 0 20px 20px;
+}

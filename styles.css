@@ -2,6 +2,7 @@
 @import url(styles/library.css);
 @import url(styles/footer.css);
 @import url(styles/header.css);
+@import url(styles/main.css);
 
 :root {
     --cor-fundo: #121212;
