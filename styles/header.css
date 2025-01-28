@@ -1,0 +1,94 @@
+.header {
+    background-color: var(--cor-fundo);
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 12px 8px 12px 4px;
+    align-items: center;
+}
+
+.header__nav {
+    display: flex;
+    gap: 20px;
+}
+
+.header__right, .header__left {
+    background-color: rgb(0, 0 , 0.7);
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    transition: transform 0.3s ease;
+}
+
+.header__left:hover, .header__right:hover {
+    transform: scale(1.2);
+}
+
+.header__buttons {
+    font-family: var(--font-principal);
+    font-weight: 600;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.header__buttons__insc {
+    text-decoration: none;
+    color: var(--cor-texto);
+    transition: transform 0.3s ease;
+}
+
+.header__buttons__insc:hover {
+    color: var(--cor-destaque);
+    transition: color 0.3s ease;
+    transform: scale(1.05);
+}
+
+.header__buttons__entrar {
+    text-decoration: none;
+    padding: 16px 28px;
+    background-color: var(--cor-destaque);
+    color: var(--cor-fundo);
+    border-radius: 24px;
+    transition: transform 0.3s ease;
+}
+
+.header__buttons__entrar:hover {
+    transform: scale(1.05);
+}
+
+.header__input {
+    display: flex;
+    margin-right: auto;
+    background-color: var(--cor-hover);
+    padding: 16px;
+    width: 22%;
+    border-radius: 32px;
+    margin-left: 1em;
+    border: 1px solid transparent;
+}
+
+.header__input input {
+    background: transparent;
+    border: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 10px;
+    outline: none;
+    color: var(--cor-destaque);
+    width: 90%;
+}
+
+.header__input:hover {
+    border: 1px solid var(--cor-destaque);
+}
+
+.header__input img {
+    width: 16px;
+    height: 16px;
+}

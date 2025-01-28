@@ -16,6 +16,6 @@ body {
 }
 
 .main__container {
-    height: 100vh;
+    height: 100%;
     margin-left: 320px;
 }
