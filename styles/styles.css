@@ -1,0 +1,33 @@
+@import url(sidebar.css);
+@import url(library.css);
+@import url(footer.css);
+@import url(header.css);
+@import url(main.css);
+
+:root {
+    --cor-fundo: #121212;
+    --cor-texto: #B3B3B3;
+    --cor-destaque: #FFF;
+    --cor-hover: #242424;
+    --font-principal: 'DM Sans', sans-serif;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+  
+::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 12px;
+}
+
+::-webkit-scrollbar-corner {
+    background: rgba(0, 0, 0, 0); /* Torna o canto mais discreto */
+  }
+
+body, html {
+    background-color: black;
+    scrollbar-gutter: none;
+    scrollbar-gutter: stable both-edges;
+}

@@ -1,7 +1,12 @@
+.main__container {
+    height: 100%;
+    margin-left: 320px;
+}
+
 .main__content {
     color: var(--cor-destaque);
     background-color: var(--cor-fundo);
-    margin: 12px 8px 12px 4px;
+    margin: 12px 0px 12px 4px;
     border-radius: 8px;
     font-family: var(--font-principal);
 
@@ -18,4 +23,108 @@
     font-weight: 600;
     font-size: 22px;
     padding: 40px 0 20px 20px;
+}
+
+.main__cards {
+    height: 470px;
+    padding: 1em 1.5em 2.5em 0em;
+    display: grid;
+    grid-template-columns: repeat(7, minmax(215px, 1fr));
+    grid-template-rows: repeat(3, minmax(190px, 1fr));
+    gap: 16px;
+    overflow: auto;
+    margin-right: 1.5em;
+    padding-left: 1.5em;
+    position: relative;
+}
+
+.cards {
+    border-radius: 12px;
+    position: relative;
+    width: 215px;
+    height: 190px;
+    overflow: hidden;
+    text-decoration: none;
+    transition: transform 0.2s ease;
+}
+
+.cards:hover {
+    transform: scale(1.05);
+}
+
+.cards img {
+    width: 107px;
+    height: auto;
+    position: absolute;
+    right: 0;
+    top: 85px;
+    transform: rotate(25deg) translate(18%, -2%);
+}
+
+.cards span {
+    color: var(--cor-destaque);
+    font-weight: 700;
+    font-size: 22px;
+    padding: 16px;
+    position: absolute;
+}
+
+.card1 {
+    background: linear-gradient(to bottom, #1DB954, #1a4d2e);
+}
+
+.card2 {
+    background: linear-gradient(to bottom, #2D2F36, #3b3e45);
+}
+
+.card3 {
+    background: linear-gradient(to bottom, #8B0000, #5a0000);
+}
+
+.card4 {
+    background: linear-gradient(to bottom, #282828, #434343);
+}
+
+.card5 {
+    background: linear-gradient(to bottom, #8D00FF, #4e008e);
+}
+
+.card6 {
+    background: linear-gradient(to bottom, #5D3FD3, #3a258e);
+}
+
+.card7 {
+    background: linear-gradient(to bottom, #FF4500, #b52b00)
+}
+
+.card8 {
+    background: linear-gradient(to bottom, #B22222, #7a1414);
+}
+
+.card9 {
+    background: linear-gradient(to bottom, #008B8B, #005e5e); 
+}
+
+.card10 {
+    background: linear-gradient(to bottom, #1E90FF, #125fb3);
+}
+
+.card11 {
+    background: linear-gradient(to bottom, #2E8B57, #1b5a37);
+}
+
+.card12 {
+    background: linear-gradient(to bottom, #282828, #434343);
+}
+
+.card13 {
+    background: linear-gradient(to bottom, #483D8B, #2f285a);
+}
+
+.card14 {
+    background: linear-gradient(to bottom, #C71585, #8f0f5c);
+}
+
+.card15 {
+    background: linear-gradient(to bottom, #FF8C00, #b36200);
 }
