@@ -2,6 +2,9 @@ const searchInput = document.getElementById("search-input");
 const resultArtists = document.getElementById("card-result");
 const resultPlaylist = document.getElementById("main__container__cards");
 
+const titleSearch = document.querySelector('.main__title');
+const subtitleSearch = document.querySelector('.main__subtitle');
+
 function requestApi(searchTerm) {
     const url = "http://localhost:3000/artists";
 
@@ -30,6 +33,15 @@ function displayResults(result) {
 }
 
 searchInput.addEventListener('input', () => {
+    
+    if(searchInput.value === '') {
+        titleSearch.innerText = 'Bem-vindo';
+        subtitleSearch.innerText = 'Navegar por todas as seções';
+    } else {
+        titleSearch.innerText = 'Buscando resultados...';
+        subtitleSearch.innerText = 'Melhor resultado:';
+    }
+
     const searchTerm = searchInput.value.toLowerCase();
     if (searchTerm === '') {
         resultPlaylist.classList.remove('hidden');

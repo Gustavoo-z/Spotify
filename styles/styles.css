@@ -35,3 +35,7 @@ body, html {
 .hidden {
     display: none;
 }
+
+.footer__mobile {
+    display: none;
+}

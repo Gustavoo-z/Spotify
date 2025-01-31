@@ -1,0 +1,236 @@
+@media screen and (max-width: 1140px) {
+    .header__input {
+        width: 30%;
+    }
+}
+
+@media screen and (max-width: 972px) {
+    .sidebar {
+        width: 250px;
+    }
+
+    .main__container {
+        margin-left: 270px;
+    }
+
+    #main__cards {
+        grid-template-columns: repeat(3, minmax(215px, 1fr));
+    }
+
+    .podcasts {
+        height: 135px;
+    }
+
+    .links ul {
+        padding-top: 90px;
+    }
+
+    .footer__content p {
+        text-wrap: wrap;
+    }
+
+    .footer__container a {
+        text-align: center;
+        padding: 12px;
+        margin-left: 10px;
+    }
+}
+
+@media screen and (max-width: 874px) {
+    .header__nav {
+        display: none;
+    }
+
+    .header__input {
+        margin-left: 0;
+        width: 35%;
+    }
+}
+
+@media screen and (max-width: 794px) {
+    .header {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 121px;
+    }
+    
+    .card-artist {
+        height: 280px;
+    }
+
+    .header__input {
+        margin-right: 0;
+        margin-bottom: 10px;
+        width: 72%;
+    }
+
+    #main__cards {
+        grid-template-columns: repeat(2, minmax(215px, 1fr));
+        gap: 10px;
+        padding: 1em 0 0 1em;
+        margin-right: 0;
+    }
+
+    .cards {
+        width: 200px;
+        height: 190px;
+    }
+
+    .main__content {
+        height: 644px;
+        overflow: auto;
+    }
+}
+
+@media screen and (max-width: 642px) {
+    .footer__container p {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 546px) {
+    .header__buttons {
+        flex-direction: column-reverse;
+        padding-bottom: 10px;
+        gap: 14px;
+    }
+
+    .card-artist {
+        width: 180px;
+    }
+
+    .header {
+        flex-direction: column-reverse;
+    }
+
+    .header__input {
+        padding: 12px;
+    }
+
+    #search-input::placeholder {
+        color: transparent;
+    }
+
+    .header__buttons__entrar {
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width: 510px) {
+    body {
+        font-family: var(--font-principal);
+    }
+    
+    .library {
+        display: none;
+    }
+
+    .sidebar {
+        padding: 10px 0 0 0;
+        width: 100%;
+        position: absolute;
+    }
+
+    .sidebar__navigation {
+        display: inline-flex;
+        justify-content: space-between;
+        padding: 0;
+        flex-direction: row;
+        align-items: center;
+        width: 100%;
+        padding: 0 0px 0 10px;
+    }
+
+    .sidebar__navigation ul {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+    }
+
+    .header {
+        margin-left: 0;
+    }
+
+    .txt-icon {
+        display: none;
+    }
+
+    .main__content {
+        margin-left: 0;
+    }
+
+    .main__subtitle {
+        padding-top: 10px;
+    }
+
+    .main__container {
+        margin-left: 0;
+        margin-top: 93px;
+    }
+
+    #search-input::placeholder {
+        color: var(--cor-texto);
+    }
+
+    .header__buttons {
+        padding-bottom: 20px;
+    }
+
+    #main__cards {
+        margin: 16px;
+        padding-left: 0;
+        margin-right: 0;
+        margin-left: 20px;
+        gap: 20px;
+        grid-template-columns: repeat(3, minmax(200px, 1fr));
+    }
+
+    .cards {
+        width: 210px;
+        height: 190px;
+        gap: 16px;
+    }
+
+    .footer {
+        margin: 0;
+        padding: 0;
+        position: fixed;
+    }
+
+    .footer__container {
+        margin: 0;
+    }
+
+    .footer__mobile__language {
+        display: inline-flex;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .footer__mobile__links ul {
+        color: var(--cor-texto);
+        margin-bottom: 15px;
+    }
+
+    .footer__mobile__links ul li {
+        color: var(--cor-texto);
+        padding: 5px 0 5px 0;
+        gap: 5px;
+        font-size: 14px;
+    }
+
+    .footer__mobile__links ul a {
+        text-decoration: none;
+    }
+
+    .footer__mobile {
+        display: block;
+        flex-direction: row;
+        margin-bottom: 55px;
+        background-color: var(--cor-fundo);
+        border-radius: 8px;
+        padding: 10px 0px 20px 25px;
+    }
+}
