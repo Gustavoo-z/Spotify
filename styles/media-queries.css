@@ -49,10 +49,11 @@
 
 @media screen and (max-width: 794px) {
     .header {
-        flex-direction: column;
+        flex-direction: column-reverse;
         align-items: center;
         justify-content: center;
         height: 121px;
+        gap: 10px;
     }
     
     .card-artist {
@@ -84,44 +85,10 @@
 }
 
 @media screen and (max-width: 642px) {
-    .footer__container p {
-        display: none;
-    }
-}
-
-@media screen and (max-width: 546px) {
-    .header__buttons {
-        flex-direction: column-reverse;
-        padding-bottom: 10px;
-        gap: 14px;
-    }
-
-    .card-artist {
-        width: 180px;
-    }
-
-    .header {
-        flex-direction: column-reverse;
-    }
-
-    .header__input {
-        padding: 12px;
-    }
-
-    #search-input::placeholder {
-        color: transparent;
-    }
-
-    .header__buttons__entrar {
-        padding: 10px;
-    }
-}
-
-@media screen and (max-width: 510px) {
     body {
         font-family: var(--font-principal);
     }
-    
+
     .library {
         display: none;
     }
@@ -129,7 +96,6 @@
     .sidebar {
         padding: 10px 0 0 0;
         width: 100%;
-        position: absolute;
     }
 
     .sidebar__navigation {
@@ -153,7 +119,7 @@
 
     .header {
         margin-left: 0;
-        height: 150px;
+        height: 130px;
     }
 
     .txt-icon {
@@ -164,13 +130,19 @@
         margin-left: 0;
     }
 
+    .main__title {
+        text-align: center;
+    }
+
     .main__subtitle {
         padding-top: 10px;
+        text-align: center;
     }
 
     .main__container {
         margin-left: 0;
         margin-top: 93px;
+        transform: translateZ(1px);
     }
 
     #search-input::placeholder {
@@ -181,7 +153,7 @@
         display: flex;
         flex-direction: row;
         gap: 40px;
-        padding-bottom: 40px;
+        padding-bottom: 20px;
     }
 
     .header__buttons__entrar {
@@ -207,6 +179,10 @@
         margin: 0;
         padding: 0;
         position: fixed;
+    }
+
+    .footer__container p {
+        display: none;
     }
 
     .footer__container {
@@ -239,9 +215,11 @@
     .footer__mobile {
         display: block;
         flex-direction: row;
+        text-align: center;
         margin-bottom: 55px;
         background-color: var(--cor-fundo);
         border-radius: 8px;
         padding: 10px 0px 20px 25px;
+        transform: translateZ(1px);
     }
 }
