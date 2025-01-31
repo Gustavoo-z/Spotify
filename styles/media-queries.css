@@ -139,7 +139,10 @@
         flex-direction: row;
         align-items: center;
         width: 100%;
-        padding: 0 0px 0 10px;
+    }
+
+    .sidebar__navigation .logo {
+        padding-left: 15px;
     }
 
     .sidebar__navigation ul {
@@ -150,6 +153,7 @@
 
     .header {
         margin-left: 0;
+        height: 150px;
     }
 
     .txt-icon {
@@ -174,7 +178,14 @@
     }
 
     .header__buttons {
-        padding-bottom: 20px;
+        display: flex;
+        flex-direction: row;
+        gap: 40px;
+        padding-bottom: 40px;
+    }
+
+    .header__buttons__entrar {
+        padding: 16px 20px;
     }
 
     #main__cards {
