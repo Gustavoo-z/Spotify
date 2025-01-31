@@ -9,13 +9,22 @@ function requestApi(searchTerm) {
     const url = "http://localhost:3000/artists";
 
     fetch(url)
-        .then((response) => response.json())
+        .then((response) => {
+            if (!response.ok) {
+                throw new Error("Erro ao buscar os dados");
+            } 
+            return response.json();
+        })
         .then((result) => {
             const filteredResults = result.filter(artist =>
                 artist.name.toLowerCase().includes(searchTerm.toLowerCase())
             );
-            console.log("Resultado:", filteredResults);
             displayResults(filteredResults);
+        }).catch((error) => {
+            console.error("Erro na requisição:", error);
+
+            subtitleSearch.innerText = "Erro: Verifique sua conexão de rede ou se há problema na API.";
+            subtitleSearch.style.color = 'red';
         });
 }
 
@@ -37,9 +46,11 @@ searchInput.addEventListener('input', () => {
     if(searchInput.value === '') {
         titleSearch.innerText = 'Bem-vindo';
         subtitleSearch.innerText = 'Navegar por todas as seções';
+        subtitleSearch.style.color = 'white';
     } else {
         titleSearch.innerText = 'Buscando resultados...';
         subtitleSearch.innerText = 'Melhor resultado:';
+        resultPlaylist.classList.add('hidden');
     }
 
     const searchTerm = searchInput.value.toLowerCase();
