@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Spotify Imersão</title>
+    <title>Spotify</title>
     <link rel="stylesheet" href="/styles/reset.css">
     <link rel="stylesheet" href="/styles/styles.css">
     <link rel="icon" href="/assets/icons/favicon.png">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/solid.css"
     integrity="sha384-Tv5i09RULyHKMwX0E8wJUqSOaXlyu3SQxORObAI08iUwIalMmN5L6AvlPX2LMoSE" crossorigin="anonymous" />
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/fontawesome.css"
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/fontawesome.css"
     integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous" />
 </head>
 <body>
@@ -90,7 +90,7 @@
                 </div>
                 <div class="header__input">
                     <img src="/assets/icons/search.png">
-                    <input placeholder="O que você quer ouvir?">
+                    <input id="search-input" placeholder="O que você quer ouvir?">
                 </div>
                 <div class="header__buttons">
                     <a class="header__buttons__insc" href="">Inscrever-se</a>
@@ -100,7 +100,27 @@
             <div class="main__content">
                 <h1 class="main__title">Bem-vindo</h1>
                 <h2 class="main__subtitle">Navegar por todas as seções</h2>
-                <div class="main__cards">
+                
+                <div id="card-result" class="hidden">
+                    <div class="card-grid">
+                        <div class="card-artist">
+                            <div class="card-img">
+                                <img src="" class="artist-img" id="artist-img">
+                                <div class="card-play">
+                                    <span class="fa fa-solid fa-play"></span>
+                                </div>
+                            </div>
+                            <div class="card-text">
+                                <a href="" class="card-button">
+                                    <span class="artist-name" id="artist-name"></span>
+                                    <span class="artist-categorie">Artista</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="main__container__cards" class="">
+                <div id="main__cards">
                     <a class="cards" href="">
                         <div class="cards card1">
                             <img src="/assets/playlist/1.jpeg">
@@ -192,6 +212,7 @@
                         </div>
                     </a>
                 </div>
+                </div>
             </div>
         </div>
     </main>
@@ -206,5 +227,6 @@
             </a>
         </div>
     </footer>
+    <script type="text/javascript" src="script.js"></script>
 </body>
 </html>
