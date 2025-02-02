@@ -10,7 +10,7 @@ Projeto desenvolvido durante a **Imersão Front-end** da plataforma Alura.
 ## 🛠️ Como instalar e rodar o projeto
 
 1. Certifique-se de ter o **Node.js** instalado em sua máquina.
-2. No Terminal do VSCode(Ctrl + Shift + ' ) instale o **JSON Server** globalmente com o comando:
+2. No Terminal do VSCode(Ctrl + Shift + ' ) ou seu editor de código preferido, instale o **JSON Server** globalmente com o comando:
    ```sh
    npm install -g json-server
    ```
